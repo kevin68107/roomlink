@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#171219 ;
+}
+#header{
+    color: #fff;
+}
+h1{
+    font-family: calibri;
+    font-size: 350%;
+    padding-left: 550px;
+    padding-top: 35px;
+}
+h3{
+    font-family: calibri;
+    font-size: 155%;
+    color: #739D9D;
+    padding-left: 37.3%;
+}
+#form{
+    color: #171219;
+    padding-left: 500px;
+}
+H4{
+    color:#739D9D ;
+    padding-left: 610px;
+}
+#submit{
+    border-left: 1px solid #00cccc;
+    border-bottom: 1px solid#00cccc;
+    border-right: 1px solid#00cccc;
+    border-top: 1px solid#00cccc;
+    padding:10PX 5px 10PX 5PX ;
+    margin:5PX 555PX 5PX 555PX ;
+    color:#00cccc ;
+    text-align: center;
+}
+#sub{
+    color: #00cccc;
+    padding-left: 650px;
+}
+@media(max-width:400px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #header{
+        color: #fff;
+    }
+    h1{
+        font-family: calibri;
+        font-size: 350%;
+        padding-left: 550px;
+        padding-top: 35px;
+    }
+    h3{
+        font-family: calibri;
+        font-size: 155%;
+        color: #739D9D;
+        padding-left: 37.3%;
+    }
+    #form{
+        color: #171219;
+        padding-left: 500px;
+    }
+    H4{
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        color:#739D9D ;
+        padding-left: 610px;
+    }
+    #submit{
+        border-left: 1px solid #00cccc;
+        border-bottom: 1px solid#00cccc;
+        border-right: 1px solid#00cccc;
+        border-top: 1px solid#00cccc;
+        padding:10PX 5px 10PX 5PX ;
+        margin:5PX 555PX 5PX 555PX ;
+        color:#00cccc ;
+        text-align: center;
+    }
+    #sub{
+        color: #00cccc;
+        padding-left: 650px;
+    }
+}

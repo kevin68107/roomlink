@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #5cd1e6;
+  --text-grey: #8390a2;
+  --color-dark: #1d2231;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  /* background: #fff; */
+}
+/*header*/
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: var(--main-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 20;
+  padding: 0 100px;
+}
+
+header h2 {
+  margin-left: 2%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+nav {
+  margin: 0 2%;
+  width: 20%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.nav-links a:hover {
+  background: #fff;
+  color: var(--main-color);
+  padding: 5%;
+  border-radius: 5%;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.container {
+  width: 100%;
+}
+
+section{
+  height: 100%;
+  padding-top: 25vh;
+}
+/* about */
+
+#about {
+  width: 100%;
+  padding-top: 15vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  /* background: #333; */
+  border-radius: 50%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #5cd1e6;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.txt {
+  width: 40%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt p {
+  margin-bottom: 30px;
+}
+
+.txt .img-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-container .img-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Contact */
+#contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: red;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.cont-wrapper {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cont-wrapper .left-side {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.form {
+  width: 30%;
+}
+
+.form p {
+  margin-bottom: 20px;
+}
+
+.form form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field,
+textarea {
+  border-color: bisque;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.input-field input,
+textarea {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  margin-bottom: 20px;
+}
+
+form button {
+  width: 30%;
+  padding: 7px;
+}
+
+/* faq */
+
+#faq {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.faq-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.questions
+{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.left, .right
+{
+	width: 50%;
+	text-align: center;
+	padding:2%;
+}
+
+.subt
+{
+	font-size: 2em;
+	margin-left: 2%;
+	text-align: center;
+}
+
+.tt
+{
+	font-size:1.3em;
+	font-weight: normal;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.aa
+{
+	margin-bottom: 2%;
+}
+
+/* .img-container .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+} */
+
+footer {
+  width: 100%;
+  /* position: fixed; */
+  /* bottom: 0; */
+  text-align: center;
+  /* left: 0; */
+  padding: 10px;
+}

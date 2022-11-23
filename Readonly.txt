@@ -1,0 +1,15 @@
+Landlord
+Homepage
+ Search bar
+ nav bar
+ Preview section with slide effect
+ List of the hostels in grid view
+
+Login
+	Username
+	Password
+	forget password
+
+List of Hostels
+
+include('ap.php); on all the pages

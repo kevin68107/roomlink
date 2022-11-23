@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #5cd1e6;
+  --text-grey: #8390a2;
+  --color-dark: #1d2231;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+}
+/*header*/
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: var(--main-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 20;
+  padding: 0 100px;
+}
+
+header h2 {
+  margin-left: 2%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+nav {
+  margin: 0 2%;
+  width: 20%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.nav-links a:hover {
+  background: #fff;
+  color: var(--main-color);
+  padding: 5%;
+  border-radius: 5%;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 100px;
+  background: #fff;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.container form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 23px -15px #333;
+  margin-bottom: 50px;
+}
+
+.container form .pic-field {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container form .pic-field .picture {
+  width: 350px;
+  height: 200px;
+  background-color: #333;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.container form .pic-field .picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.container form .pic-field .picture label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+form .field{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.container form .field input{
+  position: relative;
+  height: 100%;
+  width: 60%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+}
+
+.container form .field label,
+.container form label .label{
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.container form .type-field{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.container form .type-field input{
+  position: relative;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  width: 50%;
+}
+.container form .type-field select{
+  width: 50%;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background: var(--main-color);
+  border: none;
+  color: #fff;
+  padding: 1% 5%;
+  font-size: 1rem;
+  border-radius: 10px;
+  width: auto;
+}
+
+button:hover{
+  background: #00bfff;
+}
+
+footer {
+  background: var(--main-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+}

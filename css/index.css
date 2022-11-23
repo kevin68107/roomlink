@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+header {
+  z-index: 12;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  background: #008fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+header p {
+  margin-left: 2%;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav {
+  margin-right: 2%;
+  width: 20%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.nav-links a:hover {
+  background: #fff;
+  color: #008fff;
+  padding: 4%;
+}
+
+/*BURGER VIEW STYLING*/
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+/*END*/
+
+/*END*/
+
+/*WELCOME STYLING*/
+
+#welcome {
+  padding-top: 15vh;
+  width: 100%;
+  height: 85vh;
+  background-image: url("images/welcome.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#welcome p {
+  font-size: 10em;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #008fff;
+  margin-left: 2%;
+}
+.buthold {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons a {
+  width: 40%;
+}
+.buttons a button {
+  background: #008fff;
+  color: #fff;
+  border: none;
+  padding: 5%;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+.buttons a button:hover {
+  background: #00bfff;
+}
+
+/*WELCOME STYLING END*/
+
+/*HOSTEL CHECKOUT*/
+
+#hostels {
+  width: 100%;
+  height: 211vh;
+  padding-top: 15vh;
+}
+
+/*SLIDER*/
+.slider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 23%;
+  background-color: grey;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+.sliderchild {
+  height: 100%;
+  width: 500%;
+  animation: slider infinite 33s 1s;
+  animation-direction: alternate;
+}
+.imagecon {
+  height: 100%;
+  width: 20%;
+  background-color: red;
+  float: left;
+}
+.imagecon:nth-child(1) {
+  background-image: url("images/slider/bd01.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.imagecon:nth-child(2) {
+  background-image: url("images/slider/bd04.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.imagecon:nth-child(3) {
+  background-image: url("images/slider/bd05.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.imagecon:nth-child(4) {
+  background-image: url("images/slider/bd12.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.imagecon:nth-child(5) {
+  background-image: url("images/slider/bd14.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes slider {
+  6.2% {
+    margin-left: 0%;
+  }
+  12.5% {
+    margin-left: -100%;
+  }
+  18.75% {
+    margin-left: -100%;
+  }
+  25% {
+    margin-left: -200%;
+  }
+  31.25% {
+    margin-left: -200%;
+  }
+  37.5% {
+    margin-left: -300%;
+  }
+  43.75% {
+    margin-left: -300%;
+  }
+  50% {
+    margin-left: -400%;
+  }
+  56.25% {
+    margin-left: -400%;
+  }
+  62.5% {
+    margin-left: -300%;
+  }
+  68.75% {
+    margin-left: -300%;
+  }
+  75% {
+    margin-left: -200%;
+  }
+  81.25% {
+    margin-left: -200%;
+  }
+  87.5% {
+    margin-left: -100%;
+  }
+  93.75% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+/*SLIDER END*/
+
+.hosteltable {
+  width: 100%;
+  height: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.houses {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.rooms {
+  width: 19%;
+  height: 100%;
+  box-shadow: 0px 5px 15px -10px #000;
+}
+.rooms .image {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.linkk {
+  text-decoration: none;
+}
+.rooms .image div {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: #0005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.rooms .image div i {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2em;
+  width: 24%;
+  height: 30%;
+  border-radius: 50px;
+  background-color: #008fff;
+  transition: 0.5s;
+}
+.rooms .image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.rooms .writings {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+.tit {
+  padding-top: 5%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*HOSTEL CHECKOUT END*/
+
+.back {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.back a {
+  margin-right: 2%;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.back i {
+  font-size: 2.5em;
+  margin-right: 2%;
+  color: #008fff;
+  transition: 0.5s;
+}
+.back i:hover {
+  color: #00bfff;
+}
+/*FOOTER*/
+
+footer {
+  background: #008fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+/*FOOTER END*/

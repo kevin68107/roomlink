@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #5cd1e6;
+  --text-grey: #8390a2;
+  --color-dark: #1d2231;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  background-image: url(../images/rl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 600px;
+  width: auto;
+  box-shadow: 0 0 10px -5px #333;
+  border-radius: 5px;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-slider {
+  padding: 10px;
+  height: 100%;
+  width: 450px;
+  background-image: url(../images/login.jpg);
+  box-shadow: 0 0 8px -5px rgb(154, 240, 233);
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.img-slider h2 {
+  position: relative;
+  font-size: 27px;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+.img-slider p {
+  position: relative;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.container-reg {
+  height: auto;
+  width: 450px;
+  box-shadow: 0 0 10px -5px #333;
+  border-radius: 5px;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .form {
+  width: 450px;
+  padding: 10px;
+}
+.container .form.login {
+  width: 100%;
+}
+.container .form.login form {
+  width: 100%;
+}
+
+.container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+.container-reg .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  color: var(--main-color);
+  border-radius: 25px;
+}
+.form .form.login .input-field {
+  border-color: bisque;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+.input-field input {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+}
+.input-field input:is(:focus, :valid) {
+  border-bottom-color: #4070f4;
+}
+.input-field i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+  color: #4070f4;
+}
+
+.input-field i .icon {
+  left: 0;
+}
+.input-field i .icon .showHidePw {
+  right: 0;
+}
+
+.form .checkbox-text {
+  margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: aqua;
+}
+
+.form .text {
+  color: #333;
+  font-size: 14px;
+}
+
+.form a.text.fp {
+  color: rgb(93, 230, 184);
+  text-decoration: none;
+}
+.form a.fp:hover {
+  text-decoration: underline;
+}
+.form .button {
+  margin-top: 30px;
+}
+.form .button input {
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #40f4f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input:hover {
+  background-color: aqua;
+}
+.form .login-signup {
+  margin-top: 30px;
+}
+.login-signup a.text.signup-text {
+  color: rgb(93, 230, 184);
+  text-decoration: none;
+}
+.login-signup a.text.signup-text:hover {
+  text-decoration: underline;
+}
